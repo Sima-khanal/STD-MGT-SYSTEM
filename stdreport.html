@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="stylestdreport.css">
+</head>
+<body>
+
+    <h1>Student Dashboard - View Report Card</h1>
+
+    <div>
+        <input type="text" id="studentName" placeholder="Enter Student Name" required>
+        <button onclick="viewReportCard()">View Report Card</button>
+    </div>
+
+    <div id="reportCardSection" style="display: none;">
+        <h2>Report Card</h2>
+        <p><strong>Student Name:</strong> <span id="studentNameDisplay"></span></p>
+        <p><strong>Math:</strong> <span id="mathMarksDisplay"></span></p>
+        <p><strong>Science:</strong> <span id="scienceMarksDisplay"></span></p>
+        <p><strong>English:</strong> <span id="englishMarksDisplay"></span></p>
+    </div>
+
+    <script src="student.js"></script>
+</body>
+</html>

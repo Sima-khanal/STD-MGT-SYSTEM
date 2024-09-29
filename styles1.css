@@ -1,0 +1,77 @@
+/* styles.css */
+body {
+  font-family: 'Georgia', serif; /* Ensure correct font usage */
+  background-color: #f3ecde; /* Light beige background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.form-container {
+  width: 90%;
+  max-width: 500px; /* Maximum width for larger screens */
+  background-color: #fff; /* White background for the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Prevent overflow of elements */
+}
+
+.form-box {
+  padding: 20px; /* Inner padding for the form */
+}
+
+.form-box h2 {
+  text-align: center; /* Center the heading */
+  color: #191a21; /* Dark text color for visibility */
+}
+
+label {
+  display: block; /* Labels as block elements for full width */
+  margin-bottom: 8px; /* Space below each label */
+  color: #191a21; /* Dark color for labels */
+}
+
+input[type="text"],
+input[type="password"] { /* Specific input types */
+  width: 100%; /* Full width for input fields */
+  padding: 10px; /* Padding inside input fields */
+  margin-bottom: 15px; /* Space below each input */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 10px; /* Rounded corners for input fields */
+  font-family: 'Merriweather', serif; /* Font for input fields */
+}
+
+.btn {
+  width: 100%; /* Full width for buttons */
+  padding: 10px; /* Padding inside buttons */
+  background: linear-gradient(90deg, rgb(53, 123, 204), rgb(72, 86, 216)); /* Gradient background */
+  border: none; /* No border */
+  border-radius: 10px; /* Rounded corners for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-family: 'Caveat', cursive; /* Font for buttons */
+  font-size: 18px; /* Font size for buttons */
+  transition: transform 0.2s; /* Smooth transform effect on hover */
+}
+
+.btn:hover {
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+p {
+  text-align: center; /* Center text in paragraphs */
+}
+
+a {
+  color: rgb(8, 59, 68); /* Dark teal color for links */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .form-container {
+      width: 95%; /* Adjust width for smaller screens */
+  }
+}

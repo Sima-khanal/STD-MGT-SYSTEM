@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Report Card CRUD</title>
+    <link rel="stylesheet" href="stylestdreport.css">
+</head>
+<body>
+
+    <h1>Teacher's Report Card Management</h1>
+
+    <!-- Form to add or update report card -->
+    <div id="form">
+        <h2>Add/Update Report Card</h2>
+        <input type="text" id="studentName" placeholder="Student Name" required>
+        <input type="number" id="mathMarks" placeholder="Math Marks" required>
+        <input type="number" id="scienceMarks" placeholder="Science Marks" required>
+        <input type="number" id="englishMarks" placeholder="English Marks" required>
+        <button onclick="addOrUpdateReportCard()">Add/Update Report Card</button>
+    </div>
+
+    <h2>Report Cards</h2>
+    <table border="1" id="reportTable">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Math</th>
+                <th>Science</th>
+                <th>English</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="reportTableBody">
+            <!-- Dynamic rows will be added here -->
+        </tbody>
+    </table>
+
+    <script src="teacherreport.js"></script>
+</body>
+</html>

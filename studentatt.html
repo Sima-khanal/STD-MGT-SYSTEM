@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Dashboard</title>
+    <link rel="stylesheet" href="stylesatt.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar1">
+    <div class="logo">
+        <img src="SMS logo.png" alt="SMS Logo">
+        <h1>Welcome, Admin</h1>
+        <a href="index.html" class="btn">Logout</a>
+    </div>
+  </nav>
+<nav class="navbar">
+    <ul>
+        <li><a href="#profile">Your profile</a></li>
+        <li><a href="#courses">Your Courses</a></li>
+        <li><a href="#assignments">Your Assignment</a></li>
+        <li><a href="#report">Your Reports</a></li>
+        <li><a href="#attendance">Your Attendance</a></li>
+    </ul>
+</nav>
+</header>
+    <h1>Student Attendance</h1>
+
+    <!-- Student's View Interface -->
+    <section id="student-section">
+        <h2>Your Attendance</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="student-attendance">
+                <!-- Student attendance records will be displayed here -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="scriptatt.js"></script>
+</body>
+</html>

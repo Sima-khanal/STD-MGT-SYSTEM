@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="dashboard2.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar1">
+    <div class="logo">
+        <img src="SMS logo.png" alt="SMS Logo">
+        <h1>Welcome, Admin</h1>
+        <a href="index.html" class="btn">Logout</a>
+    </div>
+  </nav>
+<nav class="navbar">
+    <ul>
+        <li><a href="#profile">Your profile</a></li>
+        <li><a href="#courses">Your Courses</a></li>
+        <li><a href="#assignments">Your Assignment</a></li>
+        <li><a href="#report">Your Reports</a></li>
+        <li><a href="#attendance">Your Attendance</a></li>
+    </ul>
+</nav>
+</header>
+
+    <!-- Student Profile Section -->
+    <section id="profile">
+        <h2>Your Profile</h2>
+        <div id="profile-info">
+            <p><strong>Username:</strong> <span id="student-username">Student_username</span></p>
+            <p><strong>Email:</strong> <span id="student-email">teacher@email.com</span></p>
+            
+            <!-- Edit Profile Button -->
+            <button id="edit-profile-btn" class="btn" onclick="editProfile()">Edit Profile</button>
+            
+            <!-- Save Profile Button (Initially hidden) -->
+            <button id="save-profile-btn" class="btn" style="display: none;" onclick="saveProfile()">Save Changes</button>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>Your Courses</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course ID</th>
+                    <th>Course Name</th>
+                </tr>
+            </thead>
+            <tbody id="course-table-body">
+                <!-- Courses will be populated here dynamically -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="assignments">
+        <h2>Your Assignments</h2>
+        <ul id="assignment-list">
+            <!-- Assignments will be populated here dynamically -->
+        </ul>
+        <button class="btn" onclick="submitAssignment()">Submit Assignment</button>
+    </section>
+
+    <h1>Student Dashboard - View Report Card</h1>
+
+    <div>
+        <input type="text" id="studentName" placeholder="Enter Student Name" required>
+        <button onclick="viewReportCard()">View Report Card</button>
+    </div>
+
+    <div id="reportCardSection" style="display: none;">
+        <h2>Report Card</h2>
+        <p><strong>Student Name:</strong> <span id="studentNameDisplay"></span></p>
+        <p><strong>Math:</strong> <span id="mathMarksDisplay"></span></p>
+        <p><strong>Science:</strong> <span id="scienceMarksDisplay"></span></p>
+        <p><strong>English:</strong> <span id="englishMarksDisplay"></span></p>
+    </div>
+  <section id="attendance">
+    <a href="studentatt.html" class="btn">My Attendance</a>
+    <ul id="attendance-table-body">
+        <!-- Attendance will be populated here dynamically -->
+    </ul>
+    <button class="btn" onclick="viewAttandance()">view Attendance</button>
+</section>
+
+    <footer>
+      <p>&copy; 2024 Student Management System. All rights reserved.</p>
+  </footer>
+
+    <script src="dashboard2.js"></script>
+</body>
+</html>

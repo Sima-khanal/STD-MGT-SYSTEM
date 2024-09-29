@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Attendance Dashboard</title>
+    <link rel="stylesheet" href="stylesatt.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar1">
+        <div class="logo">
+            <img src="SMS logo.png" alt="SMS Logo">
+            <h1>Welcome, Admin</h1>
+            <a href="index.html" class="btn">Logout</a>
+        </div>
+      </nav>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#profile">Your profile</a></li>
+            <li><a href="#courses">Your Courses</a></li>
+            <li><a href="#assignments">Your Assignment</a></li>
+            <li><a href="#report">Your Reports</a></li>
+            <li><a href="#attendance">Your Attendance</a></li>
+        </ul>
+    </nav>
+    </header>
+    <h1>Teacher Attendance Management</h1>
+
+    <!-- Teacher's CRUD Interface -->
+    <section id="teacher-section">
+        <h2>Manage Attendance</h2>
+        <form id="attendance-form">
+            <input type="text" id="student-id" placeholder="Student ID" required>
+            <input type="date" id="attendance-date" required>
+            <select id="attendance-status" required>
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+                <option value="Late">Late</option>
+            </select>
+            <button type="button" onclick="addAttendance()">Add Attendance</button>
+        </form>
+
+        <h3>Attendance Records</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="attendance-records">
+                <!-- Attendance records will be added here dynamically -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="scriptatt.js"></script>
+</body>
+</html>

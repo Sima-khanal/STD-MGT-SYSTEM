@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign Up for admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <!-- Login Form -->
+        <div class="form-box" id="login-form">
+            <h2>Login</h2>
+            <form id="login-Form" action="dashboard.html" method="submit">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit" class="btn">Login</button>
+                
+                <p>Don't have an account? <a href="#" id="signup-link">Sign Up</a></p>
+            </form>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="form-box" id="signup-form" style="display:none;">
+            <h2>Sign Up</h2>
+            <form id="signup-Form" action="dashboard.html" method="submit">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" required>
+
+                <label for="mname">Middle Name</label>
+                <input type="text" id="mname" name="mname">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" required>
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="contact">Contact Number</label>
+                <input type="text" id="contact" name="contact" required>
+
+                <label for="password-signup">Password</label>
+                <input type="password" id="password-signup" name="password-signup" required>
+
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <button type="submit" class="btn">Sign Up</button>
+
+                <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+
+                <!-- Display validation error messages -->
+                <div id="error-message" style="color: red; display: none;"></div>
+            </form>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
